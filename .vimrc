@@ -10,7 +10,7 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 
 " Plugins
-Plugin 'Valloric/YouCompleteMe' 
+Plugin 'Valloric/YouCompleteMe'
 Plugin 'nvie/vim-flake8'
 Plugin 'bling/vim-airline'
 
@@ -68,6 +68,9 @@ set pastetoggle=<F2>            " Special paste mode for pasting code from anoth
 
 set clipboard=unnamed           " Use clipboard as default register
 
+" Fix Python Path (for YCM)
+let g:ycm_path_to_python_interpreter="/Library/Frameworks/Python.framework/Versions/3.5/bin/python3"
+
 " Mappings to traverse buffer list 
 nnoremap <silent> [b :bprevious<CR>
 nnoremap <silent> ]b :bnext<CR>
@@ -90,9 +93,6 @@ let g:airline_powerline_fonts = 1
 set laststatus=2
 
 " End of airline stuff
-
-" YouCompleteMe python setting
-let g:ycm_server_python_interpreter = '/usr/bin/python3'
 
 set t_Co=256
 colorscheme peachpuff
