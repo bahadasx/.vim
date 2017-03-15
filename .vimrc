@@ -91,5 +91,8 @@ set laststatus=2
 
 " End of airline stuff
 
+" YouCompleteMe python setting
+let g:ycm_server_python_interpreter = '/usr/bin/python3'
+
 set t_Co=256
 colorscheme peachpuff
