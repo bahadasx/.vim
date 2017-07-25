@@ -19,8 +19,8 @@ parse_git_branch() {
 
 export PS1="\u@\h \W\[\033[32m\]\$(parse_git_branch)\[\033[00m\] $ "
 
-#bash autocompletion within git commands
-test -f ~/.git-completion.bash && . $_
+#bash autocompletion within git commands. requires git-completion.bash script to be in the right place
+test -f ~/git-completion.bash && . $_
 GIT_PS1_SHOWDIRTYSTATE=true
 
 #virtualenv and virtualenvwrapper
