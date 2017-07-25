@@ -10,5 +10,5 @@ rm ~/.vimrc
 ln -s ~/.vim/.vimrc ~/.vimrc
 ```
 
-##bash_profile
+## bash_profile
 This file assumes that you have python 3.5, virtualenv, and virtualenvwrapper installed.  If you do not have these installed, you will need to comment out the lines referring to these dependencies or change them accordingly.
